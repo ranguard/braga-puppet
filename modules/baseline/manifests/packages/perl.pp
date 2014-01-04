@@ -1,4 +1,4 @@
-define baseline::packages::perl (
+class baseline::packages::perl (
 
 ) {
 
