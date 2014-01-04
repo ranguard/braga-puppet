@@ -1,6 +1,6 @@
 class baseline {
-	include baseline::ssh
 	include baseline::packages
+	include baseline::services
 	include baseline::configs
 
 #	include baseline::user

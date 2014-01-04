@@ -15,4 +15,6 @@ Clone this repo, copy 'ssl' from /etc/puppet into it,
 then make the clone symlinked as /etc/puppet
 
 
+/bin/su - -c 'umask 022; /usr/local/perlbrew/perls/perl-5.16.2/bin/cpanm --verbose SimpleDB::Class' perlbrew
+
 

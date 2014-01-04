@@ -49,7 +49,6 @@ class baseline::packages::system (
     package { 'libpng12-0': ensure => latest }
     package { libxml2: ensure => latest }
     package { 'libxml2-utils': ensure => latest }
-    package { memcached: ensure => latest }
     package { ncftp: ensure => latest }
     package { 'ncurses-base': ensure => latest }
     package { 'ncurses-bin': ensure => latest }

@@ -1,4 +1,4 @@
-class baseline::ssh {
+class baseline::services::ssh {
     package { ["openssh-server", "openssh-client"]:
       ensure => latest,
     }->

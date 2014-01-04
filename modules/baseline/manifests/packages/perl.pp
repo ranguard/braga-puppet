@@ -14,6 +14,11 @@ class baseline::packages::perl (
         'libexpat1-dev': ensure => present;
         # AnyEvent::Curl::Multi
         'libcurl4-openssl-dev': ensure => present;
+        # Memcache
+        'libcloog-ppl0': ensure => present;
+        # Image::Imlib2
+        'libimlib2': ensure => present;
+        'libimlib2-dev': ensure => present;
     }
 
 }
