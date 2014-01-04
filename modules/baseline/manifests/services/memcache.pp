@@ -1,4 +1,4 @@
-class baseline::services::memcached {
+class baseline::services::memcache {
     package { ["memcached",]:
       ensure => latest,
     }->
