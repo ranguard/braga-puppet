@@ -1,4 +1,4 @@
-define sheep::user(
+define baseline::user(
     $user = $name,
     $fullname = "",
     $path = "/home",
@@ -106,7 +106,7 @@ define sheep::user(
 }
 
 
-class sheep::user::admins {
+class baseline::user::admins {
     sheep::user {
         leo:
             admin    => true,

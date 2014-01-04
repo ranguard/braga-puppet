@@ -1,4 +1,7 @@
-class sheep::packages {
+class baseline::packages::system (
+
+) {
+
 	# Editors
 	package { vim: ensure => present }
 
@@ -10,10 +13,10 @@ class sheep::packages {
 	package { bzip2: ensure => present }
 	package { diffutils: ensure => present }
 
-    package { htop: ensure => present }
-    package { psmisc: ensure => present } # killall pstree fuser commands
-    package { rsync: ensure => present }
-    package { locate: ensure => present }
+	package { htop: ensure => present }
+	package { psmisc: ensure => present } # killall pstree fuser commands
+	package { rsync: ensure => present }
+	package { locate: ensure => present }
 
 
     # ensure locate actually works after install
@@ -55,7 +58,7 @@ class sheep::packages {
     package { rsyslog: ensure => latest }
     package { screen: ensure => latest }
     package { sudo: ensure => latest }
-    package { varnish: ensure => latest }
+    package { nginx: ensure => latest }
     package { whiptail: ensure => latest }
     package { whois: ensure => latest }
     package { 'xml-core': ensure => latest }
@@ -78,7 +81,3 @@ class sheep::packages {
       }
     }
 }
-
-
-
-

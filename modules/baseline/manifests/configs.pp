@@ -1,18 +1,18 @@
-class sheep::configs {
+class baseline::configs {
     # Aliases
     file { "/etc/aliases":
-            source => "puppet:///modules/sheep/default/etc/aliases",
+            source => "puppet:///modules/baseline/default/etc/aliases",
             owner => 'root',
             group => 'root'
     }
     # resolv
     # file { "/etc/resolv.conf":
-    #         source => "puppet:///modules/sheep/default/etc/resolv.conf",
+    #         source => "puppet:///modules/baseline/default/etc/resolv.conf",
     # }
-    
+
     package { apticron: ensure => present }->
     file { "/etc/apticron/apticron.conf":
-            source => "puppet:///modules/sheep/default/etc/apticron/apticron.conf",
+            source => "puppet:///modules/baseline/default/etc/apticron/apticron.conf",
             owner => 'root',
             group => 'root'
     }

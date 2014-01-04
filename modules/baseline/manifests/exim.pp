@@ -1,4 +1,4 @@
-class sheep::exim {
+class baseline::exim {
     package { "exim4-daemon-light":
         ensure => installed,
     }->
