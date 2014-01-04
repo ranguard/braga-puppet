@@ -58,7 +58,6 @@ class baseline::packages::system (
     package { rsyslog: ensure => latest }
     package { screen: ensure => latest }
     package { sudo: ensure => latest }
-    package { nginx: ensure => latest }
     package { whiptail: ensure => latest }
     package { whois: ensure => latest }
     package { 'xml-core': ensure => latest }

@@ -5,11 +5,6 @@ class baseline::configs {
             owner => 'root',
             group => 'root'
     }
-    # resolv
-    # file { "/etc/resolv.conf":
-    #         source => "puppet:///modules/baseline/default/etc/resolv.conf",
-    # }
-
     package { apticron: ensure => present }->
     file { "/etc/apticron/apticron.conf":
             source => "puppet:///modules/baseline/default/etc/apticron/apticron.conf",
