@@ -1,0 +1,15 @@
+---
+:backends:
+  - yaml
+:hierarchy:
+  - "servers/%{hostname}"
+  - common
+
+:json:
+  :datadir:
+    /etc/puppetlabs/puppet/hieradata
+
+:yaml:
+  :datadir:
+    "/etc/puppet/hieradata/"
+
