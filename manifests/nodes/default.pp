@@ -10,5 +10,5 @@ node default {
     include sheep::web::laurielapworth
     include sheep::web::imageeasel
 
-     notify{"In default 2": }
+    notify{"In default 2": }
 }

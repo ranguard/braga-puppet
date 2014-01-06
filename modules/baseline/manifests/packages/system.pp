@@ -67,6 +67,9 @@ class baseline::packages::system (
     package { iptables: ensure => installed }
     package { chkrootkit: ensure => present }
 
+    # Utils
+    package { irssi: ensure => present }
+
     # Euuu - nasty, remove
     package { nano: ensure => absent }
     package{ build-essential: ensure => present }
