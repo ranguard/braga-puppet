@@ -1,4 +1,4 @@
-class baseline($testinfo = "Test default") {
+class baseline($testinfo = hiera('baseline::testinfo','Test default') {
 	include baseline::packages
 	include baseline::services
 	include baseline::configs
