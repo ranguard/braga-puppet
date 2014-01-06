@@ -5,11 +5,7 @@
   - "servers/%{hostname}"
   - common
 
-:json:
-  :datadir:
-    /etc/puppetlabs/puppet/hieradata
-
 :yaml:
   :datadir:
-    "/etc/puppet/hieradata/"
+    "/etc/puppet/hieradata"
 
